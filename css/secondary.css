@@ -1,0 +1,75 @@
+.div-pri-content {
+	width: 97.3%;
+	content:"";
+	display:table;
+	clear:both;
+	padding:0.01em 16px;
+}
+
+.div-card {
+	box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	width: 95%;
+}
+
+.div-colour {
+	color:#000;
+	background-color:#a2a2a2;
+}
+
+.header-colour {
+	color:#000;
+	background-color:#98c6c3;
+}
+
+.button {
+	width: 95.1%;
+	border: none;
+	display: inline-block;
+	outline: 0;
+	padding: 6px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	color: #fff;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.button-readmore {
+	width: 100.01%;
+	border: none;
+	display: inline-block;
+	outline: 0;
+	padding: 6px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	color: #fff;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.button:hover {
+	box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button-darkgrey {
+	color:#fff;
+	background-color: #616161;
+}
+
+.button-green {
+	color: #fff;
+	background-color: #4CAF50;
+}
+
+.button-red {
+	color: #fff;
+	background-color: #f44336;
+}
+
+

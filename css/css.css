@@ -1,0 +1,272 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+button,input,select,textarea {
+	margin: 0;
+}
+
+td,th {
+	padding: 0;
+	text-align: left;
+}
+
+html {
+	font-size: 14px;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-osx-font-smoothing: antialiased;
+	min-width: 300px;
+	overflow-y: auto;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	color: #f1f1f1;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+a:hover{
+	color:#363636;
+}
+
+button {
+	align-items: center;
+	border-radius: 3px;
+	box-shadow: none;
+	display: inline-flex;
+	font-size: 1rem;
+	height: 2.285rem;
+	line-height: 1.5;
+	position: relative;
+	vertical-align: top;
+	background-color: white;
+	border: 1px solid #dbdbdb;
+	color: #363636;
+	cursor: pointer;
+	justify-content: center;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	text-align: center;
+	white-space: nowrap;
+}
+
+button:focus, button:active {
+	outline: none;
+}
+button:hover {
+	border-color: #b5b5b5;
+	color: #363636;
+}
+button:focus {
+	border-color: #00d1b2;
+	box-shadow: 0 0 0.5em rgba(0, 209, 178, 0.25);
+	color: #363636;
+}
+
+button:active {
+	border-color: #4a4a4a;
+	box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2);
+	color: #363636;
+}
+select {
+	display: inline-block;
+	height: 2.5em;
+	position: relative;
+	vertical-align: top;
+	align-items: center;
+	border: none;
+	border-radius: 3px;
+	box-shadow: none;
+	display: inline-flex;
+	font-size: 1rem;
+	height: 2.285em;
+	justify-content: flex-start;
+	line-height: 1.5;
+	padding-left: 0.75em;
+	padding-right: 0.75em;
+	position: relative;
+	vertical-align: top;
+	background-color: white;
+	border: 1px solid #dbdbdb;
+	color: #363636;
+	cursor: pointer;
+	font-size: 1em;
+	outline: none;
+}
+
+select:after {
+	border: 1px solid #00d1b2;
+	border-right: 0;
+	border-top: 0;
+	content: " ";
+	display: block;
+	height: 0.5em;
+	pointer-events: none;
+	position: absolute;
+	transform: rotate(-45deg);
+	width: 0.5em;
+	margin-top: -0.375em;
+	right: 1.125em;
+	top: 50%;
+	z-index: 4;
+}
+select:focus, select:active {
+	outline: none;
+	border-color: #00d1b2;
+}
+select:hover {
+	border-color: #b5b5b5;
+}
+
+
+input,
+textarea {
+	-moz-osx-font-smoothing: none;
+	-webkit-osx-font-smoothing: none;
+	align-items: center;
+	border: none;
+	border-radius: 3px;
+	box-shadow: none;
+	display: inline-flex;
+	font-size: 1rem;
+	height: 2.285em;
+	justify-content: flex-start;
+	line-height: 1.5;
+	padding-left: 0.75;
+	padding-right: 0.75;
+	position: relative;
+	vertical-align: top;
+	background-color: white;
+	border: 1px solid #dbdbdb;
+	color: #363636;
+	box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+	max-width: 100%;
+	width: 95%;
+}
+
+input:focus, input:active,
+textarea:focus,
+textarea:active {
+	outline: none;
+}
+input:hover;
+textarea:hover{
+	border-color: #b5b5b5;
+}
+input:focus,textarea:focus:select:focus {
+	border-color: #00d1b2;
+}
+table {
+	border-collapse: collapse;
+	border-spacing:0;
+	background-color: white;
+	color: #363636;
+	margin-bottom: 1.5rem;
+	width: 100%;
+}
+table td,
+table th {
+	border: 1px solid #dbdbdb;
+	border-width: 0px;
+	padding: 0.5em 0.75em;
+	vertical-align: top;
+}
+
+table th {
+	color: #363636;
+	text-align: left;
+}
+
+table tr:hover {
+	background-color: #fafafa;
+
+}
+
+table thead td,
+table thead th {
+	border-width: 0px;
+	color: #7a7a7a;
+}
+
+.menu {
+	height: 50px;
+}
+
+.menu ul{
+	list-style-type: none;
+}
+
+.menu li {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: inline-block;
+}
+
+.menu li a {
+	padding: 10px;
+	background: #333;
+	text-decoration: none;
+	color: #eee;
+	font-family: "Segoe UI Light";
+}
+/* CSS for device 0 ~ 768px */
+@media screen and (max-width: 768px) {
+	body {
+		width:100%;
+		background: #2d89ef;		
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.menu {
+		width: 100%;
+	}
+
+	.menu li {
+		display: block;
+		width: 100%;
+	}
+}
+
+/* CSS for device 768 ~ 999px */
+@media screen and (min-width: 769px) and (max-width: 999px) {
+	body {
+		width:100%;		
+		background: #f1f1f1;
+	}
+	.container {
+		width: 100%;
+	}
+}
+
+/* CSS for device 1200px */
+@media screen and (min-width: 1200px) {
+	body {
+		width:1100px;		
+		background: #f1f1f1;
+	}
+	.container {
+		width: 1000px;
+	}
+}
+
+/* CSS for device 1000 ~ 1199px */
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+	body {
+		width:1000px;		
+		background: #f1f1f1;
+	}
+	.container {
+		width: 1000px;
+	}
+}
